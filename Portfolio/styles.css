@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 
+body {
+    background-color: black;
+}
 .max-width{
-    max-width: 100%;
+    max-width: 85%;
     padding: 0 80px;
     margin: auto;
 
@@ -17,43 +21,50 @@
 
 /* navbar stying */
 .navbar {
-    position: fixed;
-    width: 100%;
-    padding: 10px;
+    padding: 15px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: black;
     height: 10vh;
-    z-index: 999;
 
 }
 
 .navbar .max-width{
     display: flex;
+    text-align: center;
     align-items: center;
-    justify-content: space-between;
+    justify-content: start;
 }
 
+.navbar .logo {
+    width: 10%;
+}
 .navbar .logo img {
-    color: White;
-    width: 40px;
-    height: 40px;
+    width: 50%;
+}
+
+.navbar .menu {
+    height: 15%;
+    padding: 5px;
+    margin-left: 23%;
 }
 
 .navbar .menu li{
     list-style: none;
     display: inline-block;
+    padding: 2vh;
+    height: 100%;
+    border-radius: 50px;
 }
 
 .navbar .menu li a{
     color: #fff;
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 25px;
+    font-size: 120%;
+    font-weight: 300;
     transition: color 0.3s ease;
 }
 
-.navbar .menu li a:hover{
-    color: crimson;
+.navbar .menu li:hover{
+    background-color: rgba(238, 108, 77, 0.5);
+    transition: 0.3s ease-in;
 }
 
 .menu-btn{
@@ -66,19 +77,16 @@
 /* home section stlyling */
 .home{
     display: flex;
-    background-color: black;
-    height: 100vh;
     color: white;
     min-height: 500px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    width: 100%;
 }
 
 .home .home-content .text-1{
-    font-size: 800%;
+    font-size: 600%;
     font-weight: 600;
-    color:crimson;
+    color:#EE6C4D;  
 }
 
 .home .home-content .text-2{
@@ -86,250 +94,179 @@
     font-weight: 600;
 }
 
+.home-content .dark-mode {
+    width: 3%;
+    border-radius: 100px;
+    background-color: black;
+    border: none;
+    cursor: pointer;
+    margin-left: 45%;
+    margin-top: 10%;
+    position: fixed;
+}
+.home-content button img{
+    width: 100%;
+    border-radius: inherit;
+    transition: 0.5s ease-in;
+}
 /* About section styling */
 
 section{
-    padding: 100px 0;
-
+    padding-top: 5%;
+    padding-bottom: 8%;
 }
 
-.about{
-    font-family: 'Poppins', sans-serif;
-    background: url('gym.jpg');
-    background-size: cover;
-    color: white;
-}
-
-.about .title{
+.title{
     position: relative;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     font-size: 350%;
     font-weight: 600;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     padding-bottom: 20px;
+    color: #EE6C4D;
+
 }
+.about{
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    color: white;
+    padding: 10%;
+
+
+}
+
 
 .about .about-content{
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
     justify-content: space-between;
 }
 
 .about .about-content .left{
-    width: 45%;
+    width: 35%;
 }
 
 .about .about-content .left img{
-    height: 480px;
-    width: 450px;
-    object-fit: cover;
-    border-radius: 10px; 
-    border: 3px solid crimson;
+    width: 80%;
+    /* border-radius: 10px; */
+    /* border-left: solid 7px #EE6C4D;
+    border-bottom: solid 7px #EE6C4D; */
 }
 
 .about .about-content .right{
-    width: 55%;
-    text-align: center;
-}
-
-
-.about .about-content .right .text{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    border-top: 2px solid crimson;
-}
-
-.about .about-content .right .text span{
-    color: crimson;
-}
-
-.about .about-content .right p{
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
-
-.about .about-content .right .p1{
-    border-bottom: 2px solid crimson;
-}
-
-/* Education section start */
-
-
-.edu{
-    font-family: 'Poppins', sans-serif;
-    background: url('IT.jpg');
-    background-size: cover;
-}
-
-.edu .title{
-    position: relative;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 350%;
-    font-weight: 600;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
-    color: white;
-}
-
-.edu .title::before {
-    content: "";
-    width: 200px;
-    color: crimson;
-    height: 1px;
-}
-
-.edu .edu-logo {
-    width: 15%;
-    border-radius: 15%;
-    cursor: pointer;
-}
-
-.edu .logo {
-    color: white;
-    text-align: center;
+    width: 60%;
     
 }
 
-.edu .logo .text-1{
-    color:white;
-    font-size: 5vh;
-    font-weight: 600;
-    margin-top: 50px;
-    border-bottom: 2px solid crimson;
-    width: 50%;
-    margin: auto;
+
+
+.about .about-content .right p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: #ffffff;
+    
 }
 
-.edu .logo .text-2{
+button.resume {
+    background-color: #EE6C4D;
+    width: 20%;
+    height: 15%;
+    padding: auto;
+    border-radius: 35px;
     color: white;
-    font-size: 2.5vh;
-    font-weight: 600;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    border: none;
 }
 
-.edu .logo .text-3{
-    color: white;
-    font-size: 1.5vh;
-    font-weight: 600;
+button.resume:hover {
+    background-color: black;
+    border: 2px solid #EE6C4D;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+
 }
 
 /* Skills section start */
-
-.skills {
-     background: url('skills.jpg');
-     background-size: cover;
-}
-
-.skills .title{
-    position: relative;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 350%;
-    font-weight: 600;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
+.skills-content {
+    margin: auto;
+    width: 100%;
     color: white;
-
 }
 
-.skills .lang{
-    text-align: center;
-    border-radius: 30px;
-    padding: 40px;
-    margin: auto;
-    width: 130vh;
+.skills-content div {
+    height: 10%;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-
-.skills img {
-    width: 80px;
-    margin: 50px 30px;
+.skills-content h3 {
+    padding: 2% 0;
+    color: rgba(216, 216, 216);
 }
 
-.skills .place-2 img{
-    width: 100px;
+.skills-content div p{
+    background-color:rgba(35, 35, 35, 0.5);
+    padding: 10px;
+    width: 19.5%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0.2%;
+    font-size: 120%;
 }
 
-.skills .lang .place-1{
-    border-bottom: 3px solid crimson;
-    width: 30vh;
-    margin: auto;
-}
-
-.skills .lang .place-2{
-    border-bottom: 3px solid crimson;
-    width: 80vh;
-    margin: auto;
-}
-
-.skills .lang .place-3{
-    border-bottom: 3px solid crimson;
-    width: 50vh;
-    margin: auto;
+.skills-content div p img {
+    width: 15%;
+    background-color: rgba(84, 84, 84, 0.4);
+    border-radius: 10px;
+    margin-right: 5%;
 }
 
 /* Projects section start */
 
-.projects{
-    background: url('projects.png');
-    background-size: cover;
-    width: 100%;
-}
-
-.projects .title{
-    color: white;
-    position: relative;
-    text-align: center;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 350%;
-    font-weight: 600;
-    margin-bottom: 50px;
-    padding-bottom: 20px;
-    
-}
 
 .projects .display{
     display: flex;
     justify-content: space-around;
     width: 100%;
-    border-bottom: 3px solid crimson;
     padding: 50px;
 }
 
 .projects .display div{
-    width: 40vh;
-    height: 40vh;
-    border-radius: 20%;
-    margin: 20px;
-}
-
-.projects .display div img{
-    height: inherit;
-    width: inherit;
-    margin: auto;
-    border: 2px solid crimson;
+    width: 45%;
+    height: 60vh;
+    border-radius: 30px;
+    background-color:rgba(35, 35, 35, 0.5);
+    display: block;
     text-align: center;
-}
-
-.projects .display div p{
+    padding: 5%;
     color: white;
     font-family: 'Poppins';
     font-weight: 600;
-    font-size: 3vh;
+   
     text-align: center;
 }
 
-/* Contact start */
-
-.contact {
-    background: url('atlanta.jpg');
-    background-size:cover;
-    width: 100%;
+.projects .display div img{
+    width: 50%;
+    height: 15vh;
+    margin-bottom: 5%;
+    border-radius: 10px;
 }
+
+.projects .display div li{
+    font-size: 2vh;
+    list-style: none;
+}
+
+/* Contact start */
 
 .contact .max-width{
     text-align: center;
@@ -337,7 +274,7 @@ section{
 }
 
 .contact div{
-    color: crimson;
+    color: #EE6C4D;
    font-weight: 600;
    padding: 1px;
    margin: auto ;
@@ -366,10 +303,10 @@ section{
 /* responsive media query start */
 
 @media(max-width: 1104px) {
-    .about .about-content .left img{
+    /* .about .about-content .left img{
         height: 350px;
         width: 350px;
-    }
+    } */
 }
 
 @media(max-width: 991px) {
@@ -467,4 +404,8 @@ section{
 
     
 
+}
+
+#shadow-host-companion {
+    display: none;
 }

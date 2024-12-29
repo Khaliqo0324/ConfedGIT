@@ -12,29 +12,30 @@
     
 </head>
 <body>
-    <nav class="navbar">
+    <div class="navbar">
         <div class="max-width">
-            <div class="logo"><a href='#'><img src="background.png"></a></div>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#edu">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+            <div class="logo"><a href='#'><img src="logo.jpg"></a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-    </nav>
+    </div>
 
     <!-- home section start -->
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <div class="text-1">KHALIQ OSIEFA</div>
-                <div class="text-2">ASPIRING SOFTWARE ENGINEER</div>
+                <div class="text-2">SOFTWARE ENGINEER</div>
+                <button class="dark-mode" onclick="lightSwitch()"><img src="dark.jpeg" alt="" class="display-img"></button>
             </div>
         </div>
     </section>
@@ -42,52 +43,50 @@
     <!-- about section start -->
 
     <section class="about" id="about">
-        <div class="max-width">
             <h2 class="title">ABOUT ME</h2>
             <div class="about-content">
-                <div class="column left">
-                    <img src="business.jpg" alt="me" class="headshot">
+                <div class="left">
+                    <img src="headshot.png" alt="me" class="headshot">
                 </div>
-                <div class="column right">
-                    <div class="text">Hey, my name is <span>Khaliq</span>!</div>
-                    <p>I'm a computer science student at Georgia Southern University, intending to be a software engineer.</p>
-                    <p class="p1">
-                        Outside of school, I enjoy working out at the gym, playing basketball, and of course, programming.
-                        
-                    </p>
-                </div>
+                <div class="right">
+                   <p>Hi, I’m Khaliq Osiefa, a senior studying Computer Science at the University of Georgia, graduating in May 2025. <br>
+                    I’m passionate about creating user-friendly digital experiences and solving real-world problems with technology. <br>
+                    When I’m not coding, I enjoy playing basketball, going to the gym, and diving into anime or video games. <br>
+                    Let’s connect and create something impactful together!</p>
+                    <br>
+                    <p>Here's my resume:</p>
+                    
+                    <br>
+                    <a href="Resume.docx" download="Resume.docx"><button class="resume">Resume</button></a>
             </div>
-        </div>
+
     </section>
 
-    <!-- education section start -->
-    <section class="edu" id="edu">
-        <div class="max-width">
-            <h2 class="title">EDUCATION</h2>
-            <div class="logo">
-                <a href="https://cec.georgiasouthern.edu/cs/" target="_blank"><img class="edu-logo" src="southern.png"></a>
-                <p class="text-1">COMPUTER SCIENCE</p>
-                <p class="text-2">GEORGIA SOUTHERN UNIVERSITY</p>
-                <p class="text-3">STATEBORO, GEORGIA</p>
-            </div>
-        </div>
-    </section>
 
     <!-- skills section start -->
-    <section class="skills" id="skills">
+    <section class="skills">
+        
+        <h2 class="title">SKILLS</h2>
         <div class="max-width">
-            <h2 class="title">SKILLS</h2>
-            <div class="lang">
-                <div class="place-1">
-                    <img src="python.png">
+            <div class="skills-content">
+                <h3>PROGRAMMING LANGUAGES</h3>
+                <div class="prog-lang">
+                    <p><img src="java.png" alt=""> Java</p>
+                    <p><img src="python-logo.png" alt="">Python</p>
+                    <p><img src="html-logo.png" alt="">HTML</p>
+                    <p><img src="css-logo.png" alt="">CSS</p>
+                    <p><img src="javascript-logo.webp" alt="">JavaScript</p>
                 </div>
-                <div class="place-2">
-                    <img src="java.png">
-                    <img src="html.png">
-                    <img src="css.png">
-                </div>
-                <div class="place-3">
-                    <img src="js.png">
+                <h3>TOOLS/TECHNOLOGIES</h3>
+                <div class="tools">
+                    <p><img src="github-logo.png" alt="">Git</p>
+                    <p><img src="figma-logo.webp" alt="">Figma</p>
+                    <p><img src="postman-logo.svg" alt="">Postman</p>
+                    <p><img src="jira-logo.svg" alt="">Jira</p>
+                    <p><img src="miro-logo.png" alt="">Miro</p>
+                    <p><img src="docker-logo.webp" alt="">Docker</p>
+                    <p><img src="kubernetes-logo.png" alt="">Kubernetes</p>
+                    <p><img src="gcp-logo.webp" alt="">GCP</p>
                 </div>
             </div>
         </div>
@@ -99,17 +98,21 @@
         <div class="max-width">
             <h2 class="title">PROJECTS</h2>
             <div class="display">
-                <div class="img1">
-                    <img src="snake.png">
-                    <p>SNAKE GAME</p>
-                </div>
                 <div class="img2">
+                    <h3>WEATHER APP</h3>
+                    <br>
                     <img src="weather.png">
-                    <p>WEATHER APP</p>
+                    <ul>
+                        <li>Designed and developed a weather dashboard using JavaScript and the OpenWeatherMap API for real-time weather updates.</li>
+                        <li>Utilized HTML, CSS (Flexbox/Grid), and JavaScript to create a responsive and mobile-friendly user interface.</li>
+                        <li>Integrated asynchronous JavaScript to fetch weather data dynamically and display it based on user location or input.</li>  
+                    </ul>
                 </div>
                 <div class="img3">
-                    <img src="portfolio.png">
                     <p>PORFOLIO WEBSITE</p>
+                    <br>
+                    <img src="portfolio.png">
+                    
                 </div>
             </div>
         </div>
@@ -120,21 +123,20 @@
     <section class="contact" id="contact">
         <div class="max-width">
             <div class="img">
-                <div class="linkedln">
+                <div class="linkedin">
                     <a href="https://www.linkedin.com/in/khaliq-osiefa-8107aa23a/" target="_blank"><img src="linkedin.png"></a>
                 </div>
                 <div class="gmail">
-                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=khaliqo0324@gmail.com&su=&body=&bcc=&tf=cm" target="_blank"><img src="gmail.png"></a>>
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&to=khaliqo0324@gmail.com&su=&body=&bcc=&tf=cm" target="_blank"><img src="gmail.png"></a>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/Khaliqo0324"><img src="github-logow.png" alt=""></a>
                 </div>
             </div>
             <div class="atl">MADE IN ATLANTA, GA.</div>
         </div>
         
     </section>
-
-
-
-
 <script src="Script.js"></script>
 </body>
 </html>
